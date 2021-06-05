@@ -66,7 +66,7 @@ const options = {
 }
 
 // markup
-const IndexPage = ({ data, location }) => {
+const PostPage = ({ data, location }) => {
   const pageIndex = location?.state?.pageIndex || 0
   console.log('pageIndex', pageIndex)
   const post = data?.allContentfulPresentationPost?.edges[pageIndex]?.node
@@ -82,7 +82,7 @@ const IndexPage = ({ data, location }) => {
   )
 }
 
-export default IndexPage
+export default PostPage
 
 export const pageQuery = graphql`
   query PostQuery {
