@@ -60,8 +60,6 @@ const options = {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       const imgUrl = node.data.target.file.url
       const imgTitle = node.data.target.title
-      console.log('BLOCKS.EMBEDDED_ASSET', node)
-      console.log('imgUrl', imgUrl)
       return <StyledImg src={imgUrl} alt={imgTitle} />
     },
   },
