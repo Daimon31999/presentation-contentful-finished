@@ -84,7 +84,7 @@ const PostPage = ({ data, location }) => {
 
 export default PostPage
 
-export const pageQuery = graphql`
+export const postQuery = graphql`
   query PostQuery {
     allContentfulPresentationPost {
       edges {
